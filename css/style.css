@@ -123,6 +123,7 @@ input[class^="btn-"]:hover {
 body {
   font-family: "Hind", sans-serif;
   line-height: 1.6;
+  background: rgb(248, 248, 248);
 }
 
 a {
@@ -155,11 +156,10 @@ img {
 
 #main-nav {
   padding: 2rem 3rem;
-  background-color: #333;
+  background-color: #424040;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
-  border-bottom: solid 4px #08b453;
 }
 #main-nav ul {
   display: flex;
@@ -192,6 +192,26 @@ img {
   border-bottom: 4px solid #08b453;
 }
 
+#header-contact {
+  height: 140vh;
+  background: url(https://i.pinimg.com/originals/f6/d2/46/f6d246da27b0b1459af965cbef3da53c.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 4px solid #08b453;
+}
+
+#header-team {
+  height: 140vh;
+  background: url(https://free4kwallpapers.com/uploads/originals/2015/10/08/milky-way-over-mount-rainier.jpg)
+    no-repeat center center/cover;
+}
+
+#header-contact #contact1 .container {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20vh;
+}
+
 #header-home .header-content {
   text-align: center;
   padding-top: 10vh;
@@ -215,6 +235,10 @@ img {
 }
 #header-home .header-content .image {
   margin-top: 2rem;
+}
+
+#header-home .header-content strong {
+  color: #08b453;
 }
 
 #header-inner {
@@ -296,6 +320,11 @@ img {
 #home-b {
   margin: 10vh;
   text-align: center;
+}
+
+#home-b h1 {
+  font-size: 28px;
+  color: black;
 }
 
 #home-b .social-menu ul {
@@ -475,24 +504,24 @@ img {
 }
 #contact .social-menu ul li {
   list-style: none;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 #contact .social-menu ul li .fab {
   color: #1d1b1b;
-  font-size: 35px;
-  line-height: 60px;
+  font-size: 45px;
+  line-height: 70px;
   transition: 0.5s;
 }
 #contact .social-menu ul li .fa:hover {
   color: #ffffff;
 }
 #contact .social-menu ul li a {
-  margin-top: 10vh;
+  margin-top: 35vh;
   margin-bottom: 30vh;
   position: relative;
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: #f4f4f4;
   text-align: center;
@@ -520,8 +549,9 @@ img {
 }
 
 #blog-top {
-  margin: 3rem 5rem;
+  margin-top: 3rem;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 #blog-top h1 {
@@ -529,10 +559,52 @@ img {
   font-size: 35px;
 }
 
-#blog-top p {
-  font-size: 17px;
+#blog-top #search {
+  margin-bottom: 2rem;
 }
 
-#team-top::before {
-  background-image: url(/img/pexels-photo-4448844.png);
+#blog-top p {
+  font-size: 16px;
+}
+
+#blog-recent h1 {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  font-size: xxx-large;
+  color: plum;
+  text-decoration: underline;
+}
+
+#team-top {
+  text-align: center;
+  margin: 5rem;
+  color: white;
+}
+
+#team-top h1 {
+  font-size: 40px;
+}
+
+#team-top p {
+  font-size: 25px;
+  margin-bottom: 20vh;
+}
+
+#team-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#team-main .container {
+  border-radius: 15px;
+  background: rgb(34, 33, 33);
+  width: 21rem;
+  height: 50vh;
+  color: plum;
+  text-align: center;
+}
+
+#team-main .container img {
+  margin-top: 1rem;
+  width: 40%;
+  height: 30%;
 }
