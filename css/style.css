@@ -94,7 +94,7 @@ input[class^="btn-"]:hover {
 body {
   font-family: "Hind", sans-serif;
   line-height: 1.6;
-  background: rgb(248, 248, 248);
+  background: rgb(234, 236, 240);
 }
 
 a {
@@ -116,6 +116,13 @@ img {
   width: 100%;
   border-radius: 50%;
   border: 3px solid #1dafb8;
+}
+
+.img-all {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  height: 500px;
 }
 
 #logo {
@@ -561,10 +568,73 @@ img {
   height: 50vh;
   color: plum;
   text-align: center;
+  padding: 1rem;
 }
 
-#team-main .container img {
-  margin-top: 1rem;
-  width: 40%;
-  height: 30%;
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.55rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.category {
+  display: inline-block;
+  color: white;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  background: #08b453;
+}
+
+.card-article {
+  background: white;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+}
+
+.card-side {
+  background: white;
+  height: 40vh;
+  padding: 1rem;
+}
+
+.card-side h2 {
+  text-decoration: underline;
+  color: #08b453;
+}
+
+.l-heading {
+  font-size: 3rem;
+}
+
+.card a {
+  text-decoration: underline;
+}
+
+.card-side .btn-dark {
+  margin-top: 8rem;
+  margin-left: 60px;
+}
+
+.card .list {
+  font-size: larger;
 }
