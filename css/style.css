@@ -112,17 +112,16 @@ h4 {
   text-transform: uppercase;
 }
 
-img {
-  width: 100%;
-  border-radius: 50%;
-  border: 3px solid #1dafb8;
-}
-
 .img-all {
   width: 100%;
   border-radius: 0;
   border: none;
   height: 500px;
+}
+
+.img-logo {
+  border-radius: 50%;
+  border: 3px solid #1dafb8;
 }
 
 #logo {
@@ -515,10 +514,54 @@ img {
   background-color: #0077b5;
 }
 
-#blog-top {
-  margin-top: 3rem;
+#blog-nav {
+  height: 55vh;
+  background: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_481187762_97064797045000_100756.jpg)
+    no-repeat center center/cover;
+}
+
+#blog-nav .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+#blog-nav ul {
+  display: flex;
+}
+#blog-nav li {
+  padding: 1rem 1.5rem;
+}
+
+#blog-nav .container {
+  font-size: 19px;
+  margin-top: 7vh;
+  color: #f4f4f4;
   text-align: center;
-  border-bottom: 1px solid black;
+  justify-content: center;
+}
+
+#blog-nav .container h1 {
+  font-size: xxx-large;
+  color: rgb(177, 98, 177);
+  text-decoration: underline;
+}
+
+#blog-nav a {
+  text-decoration: none;
+  color: #14e3ee;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+  text-emphasis: 1rem;
+  font-weight: bolder;
+  font-size: larger;
+}
+#blog-nav a:hover {
+  border-color: #1dafb8;
+}
+#blog-nav a.current {
+  border-color: #08b453;
 }
 
 #blog-top h1 {
@@ -527,19 +570,11 @@ img {
 }
 
 #blog-top #search {
-  margin-bottom: 2rem;
+  margin: 2rem 1rem;
 }
 
 #blog-top p {
   font-size: 16px;
-}
-
-#blog-recent h1 {
-  margin-top: 5rem;
-  margin-left: 5rem;
-  font-size: xxx-large;
-  color: plum;
-  text-decoration: underline;
 }
 
 #team-top {
@@ -637,4 +672,32 @@ img {
 
 .card .list {
   font-size: larger;
+}
+
+#blog-recent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 15vh;
+}
+#blog-recent .container {
+  border-radius: 5px;
+  background: rgb(222, 235, 227);
+  width: 29rem;
+  height: 65vh;
+  color: black;
+  text-align: center;
+  margin: 3rem;
+  padding: 0.5rem;
+  box-shadow: 0 6px 7px black;
+}
+
+.img-article {
+  width: 28rem;
+  height: 240px;
+}
+
+.blog-h {
+  text-align: center;
+  margin: 2rem;
+  font-size: x-large;
 }
