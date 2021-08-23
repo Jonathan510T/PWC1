@@ -106,12 +106,6 @@ ul {
   list-style: none;
 }
 
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-
 .img-all {
   width: 100%;
   border-radius: 0;
@@ -122,6 +116,8 @@ h4 {
 .img-logo {
   border-radius: 50%;
   border: 3px solid #1dafb8;
+  width: 150px;
+  height: 150px;
 }
 
 #logo {
@@ -261,7 +257,8 @@ h4 {
   border-left: 3px solid teal;
 }
 #home-a .container .specials1 p {
-  font-size: 28px;
+  padding: 4.5rem 2rem;
+  font-size: 22px;
 }
 #home-a .container .specials2 {
   background: url(https://static.seattletimes.com/wp-content/uploads/2021/07/073659-780x520.jpg)
@@ -292,7 +289,8 @@ h4 {
   border-left: 3px solid green;
 }
 #home-a .container .special p {
-  font-size: 28px;
+  padding: 4.5rem 2rem;
+  font-size: 22px;
 }
 
 #home-b {
@@ -516,7 +514,7 @@ h4 {
 
 #blog-nav {
   height: 55vh;
-  background: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_481187762_97064797045000_100756.jpg)
+  background: url(https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBrZXlib2FyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80)
     no-repeat center center/cover;
 }
 
@@ -533,16 +531,22 @@ h4 {
 }
 
 #blog-nav .container {
-  font-size: 19px;
-  margin-top: 7vh;
-  color: #f4f4f4;
+  font-size: 20px;
+  margin-top: 5vh;
   text-align: center;
+  font-weight: bold;
   justify-content: center;
+}
+
+#blog-nav .container p {
+  margin-top: 3.5rem;
+  color: rgb(18, 28, 37);
+  text-shadow: 0.7px 0.5px whitesmoke;
 }
 
 #blog-nav .container h1 {
   font-size: xxx-large;
-  color: rgb(177, 98, 177);
+  color: rgb(22, 173, 60);
   text-decoration: underline;
 }
 
@@ -604,6 +608,10 @@ h4 {
   color: plum;
   text-align: center;
   padding: 1rem;
+}
+
+#team-main .container p {
+  color: white;
 }
 
 #article .meta {
