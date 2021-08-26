@@ -12,6 +12,7 @@
   transition: all 1s;
   border: none;
   cursor: pointer;
+  margin: 0;
 }
 
 .btn-main {
@@ -21,7 +22,6 @@
 }
 
 .btn-light {
-  margin-top: 3rem;
   border-radius: 10px;
   color: #333;
   background-color: azure;
@@ -30,6 +30,7 @@
 .btn-dark {
   color: #f4f4f4;
   background-color: #333;
+  border-radius: 5px;
 }
 
 button[class^="btn-"]:hover,
@@ -116,8 +117,8 @@ ul {
 .img-logo {
   border-radius: 50%;
   border: 3px solid #1dafb8;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
 }
 
 #logo {
@@ -167,7 +168,7 @@ ul {
 }
 
 #header-contact {
-  height: 150vh;
+  height: 100vh;
   background: url(https://i.pinimg.com/originals/f6/d2/46/f6d246da27b0b1459af965cbef3da53c.jpg);
   background-size: cover;
   background-position: center;
@@ -191,6 +192,14 @@ ul {
   padding-top: 10vh;
   margin-top: 0;
 }
+
+#contact12 h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(5, 200, 214);
+  text-shadow: 1px 2px white;
+}
+
 #header-home .header-content h1 {
   color: #1dafb8;
   margin-top: 20vh;
@@ -322,6 +331,13 @@ ul {
   line-height: 70px;
   transition: 0.5s;
 }
+
+#home-b .social-menu ul li .fas {
+  color: #000000;
+  font-size: 45px;
+  line-height: 70px;
+  transition: 0.5s;
+}
 #home-b .social-menu ul li .fa:hover {
   color: #ffffff;
 }
@@ -390,6 +406,11 @@ ul {
   margin-left: 5rem;
   border-radius: 15px;
   color: #08b453;
+}
+
+.contactForm p {
+  text-align: center;
+  font-size: 25px;
 }
 
 .contactForm .inputBox {
@@ -476,6 +497,13 @@ ul {
   line-height: 70px;
   transition: 0.5s;
 }
+
+#contact .social-menu ul li .fas {
+  color: #000000;
+  font-size: 45px;
+  line-height: 70px;
+  transition: 0.5s;
+}
 #contact .social-menu ul li .fa:hover {
   color: #ffffff;
 }
@@ -513,7 +541,7 @@ ul {
 }
 
 #blog-nav {
-  height: 55vh;
+  height: 65vh;
   background: url(https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBrZXlib2FyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80)
     no-repeat center center/cover;
 }
@@ -523,6 +551,23 @@ ul {
   justify-content: space-between;
   padding: 1rem 2rem;
 }
+
+#blog-nav .top1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+#blog-nav .top1 li {
+  list-style: none;
+}
+
+#blog-nav .top1 a {
+  font-size: 25px;
+  color: rgb(11, 146, 146);
+  transition: 0.5s;
+}
+
 #blog-nav ul {
   display: flex;
 }
@@ -568,6 +613,12 @@ ul {
   border-color: #08b453;
 }
 
+#blog-nav .top1 a:hover {
+  color: rgb(34, 33, 33);
+  border: none;
+  padding: 1rem 2.5rem;
+}
+
 #blog-top h1 {
   color: #1dafb8;
   font-size: 35px;
@@ -603,15 +654,16 @@ ul {
 #team-main .container {
   border-radius: 15px;
   background: rgb(34, 33, 33);
-  width: 21rem;
-  height: 50vh;
+  width: 18rem;
+  height: 60vh;
   color: plum;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 #team-main .container p {
   color: white;
+  font-size: 14px;
 }
 
 #article .meta {
@@ -690,18 +742,24 @@ ul {
 #blog-recent .container {
   border-radius: 5px;
   background: rgb(222, 235, 227);
-  width: 29rem;
-  height: 65vh;
+  width: 28rem;
+  height: 70vh;
   color: black;
   text-align: center;
   margin: 3rem;
-  padding: 0.5rem;
+  padding: 1.5rem;
   box-shadow: 0 6px 7px black;
+}
+
+#blog-recent .container p {
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 .img-article {
   width: 28rem;
-  height: 240px;
+  height: 245px;
 }
 
 .blog-h {
