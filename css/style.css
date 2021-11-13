@@ -116,7 +116,7 @@ ul {
 
 .img-logo {
   border-radius: 50%;
-  border: 3px solid #1dafb8;
+  border: 3px solid #12949b;
   width: 125px;
   height: 125px;
 }
@@ -130,7 +130,7 @@ ul {
 
 #main-nav {
   padding: 2rem 3rem;
-  background-color: #3a4e50;
+  background: #3a4e50;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
@@ -144,7 +144,7 @@ ul {
 }
 #main-nav a {
   text-decoration: none;
-  color: #1dafb8;
+  color: #12949b;
   text-transform: uppercase;
   border-bottom: 3px transparent solid;
   padding-bottom: 0.5rem;
@@ -154,16 +154,46 @@ ul {
   font-size: larger;
 }
 #main-nav a:hover {
-  border-color: #1dafb8;
+  border-color: #12949b;
 }
 #main-nav a.current {
   border-color: #08b453;
 }
 
+#contact-nav {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+#contact-nav ul {
+  display: flex;
+}
+#contact-nav li {
+  padding: 1rem 1.5rem;
+}
+#contact-nav a {
+  text-decoration: none;
+  color: rgb(238, 244, 245);
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+  text-emphasis: 1rem;
+  font-weight: bolder;
+  font-size: larger;
+}
+#contact-nav a:hover {
+  border-color: #12949b;
+}
+#contact-nav a.current {
+  border-color: #08b453;
+}
+
 #header-home {
   height: 140vh;
-  background: url(https://westcoastoah.org/wp-content/uploads/2018/12/matthew-kane-536032-unsplash.jpg)
-    no-repeat center center/cover;
+  background: url("../img/IMG_0295.JPG") no-repeat center center/cover;
   border-bottom: 4px solid #08b453;
 }
 
@@ -172,7 +202,6 @@ ul {
   background: url(https://i.pinimg.com/originals/f6/d2/46/f6d246da27b0b1459af965cbef3da53c.jpg);
   background-size: cover;
   background-position: center;
-  border-bottom: 4px solid #08b453;
 }
 
 #header-team {
@@ -201,17 +230,16 @@ ul {
 }
 
 #header-home .header-content h1 {
-  color: #1dafb8;
-  margin-top: 20vh;
+  color: #058188;
+  margin-top: 10vh;
   font-size: 4rem;
   line-height: 1.2;
-  text-shadow: 4px 2px 2px white;
 }
 #header-home .header-content p {
-  margin-top: 1rem;
+  margin-top: 10rem;
   padding: 1rem;
   color: white;
-  font-size: 25px;
+  font-size: 35px;
 }
 #header-home .header-content .lead {
   margin-bottom: 0.5rem;
@@ -225,7 +253,7 @@ ul {
 }
 
 #header-inner {
-  background: #1dafb8;
+  background: #12949b;
   height: 8rem;
   border-bottom: 3px solid #333;
   color: #f4f4f4;
@@ -238,7 +266,7 @@ ul {
 }
 .image img {
   border-radius: 0px;
-  border-top: solid 4px #1dafb8;
+  border-top: solid 4px #12949b;
   border-bottom: solid 4px #08b453;
   padding: 0px;
 }
@@ -378,7 +406,7 @@ ul {
   background: #3a4e50;
   color: #fff;
   height: 13vh;
-  width: 100vw;
+  width: 99vw;
 }
 #main-footer .footer-content {
   display: flex;
@@ -542,8 +570,7 @@ ul {
 
 #blog-nav {
   height: 65vh;
-  background: url(https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBrZXlib2FyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80)
-    no-repeat center center/cover;
+  background: rgb(236, 221, 224);
 }
 
 #blog-nav .top {
@@ -586,7 +613,6 @@ ul {
 #blog-nav .container p {
   margin-top: 3.5rem;
   color: rgb(18, 28, 37);
-  text-shadow: 0.7px 0.5px whitesmoke;
 }
 
 #blog-nav .container h1 {
@@ -597,7 +623,7 @@ ul {
 
 #blog-nav a {
   text-decoration: none;
-  color: #14e3ee;
+  color: #12949b;
   text-transform: uppercase;
   border-bottom: 3px transparent solid;
   padding-bottom: 0.5rem;
