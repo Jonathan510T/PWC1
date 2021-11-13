@@ -4,7 +4,8 @@ body {
     border-radius: 50%;
     border: 3px solid #12949b;
     width: 125px;
-    height: 125px; }
+    height: 125px;
+    object-fit: cover; }
   body #logo {
     width: 70px;
     height: 70px;
