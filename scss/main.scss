@@ -1,5 +1,180 @@
-$main-color: red;
-
 body {
-  background: $main-color;
+  font-family: "Hind", sans-serif;
+  .img-logo {
+    border-radius: 50%;
+    border: 3px solid #12949b;
+    width: 125px;
+    height: 125px;
+  }
+  #logo {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  header {
+    
+    #nav-bar {
+      padding: 2rem 3rem;
+      background: #3a4e50;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1rem;
+      height: 60px;
+      ul {
+        display: flex;
+      }
+      li {
+        padding: 1rem 1.5rem;
+      }
+      a {
+        text-decoration: none;
+        color: #12949b;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+        text-emphasis: 1rem;
+        font-weight: bolder;
+        font-size: larger;
+      }
+      a:hover {
+        border-color: #12949b;
+      }
+      a.current {
+        border-color: #08b453;
+      }
+    }
+    #home-b {
+      
+      h1 {
+        
+      }
+      .social-menu ul {
+        
+        li {
+          
+          .fab {
+            
+          }
+          .fas {
+            
+          }
+          .fa:hover {
+            
+          }
+          a {
+            
+          }
+          a:hover {
+            
+          }
+          
+        }
+        li:nth-child(1) a:hover {
+          
+        }
+        li:nth-child(2) a:hover {
+          
+        }
+        li:nth-child(3) a:hover {
+          
+        }
+        li:nth-child(4) a:hover {
+          
+        }
+        li:nth-child(5) a:hover {
+          
+        }
+      }
+    }
+    .header-content {
+      
+      h1 {
+        
+      }
+      p {
+        
+      }
+      .lead {
+        
+      }
+      .image {
+        
+      }
+      strong {
+        
+      }
+    }
+  }
+  #home-a {
+    .container {
+      
+      .specials1 {
+        
+        p {
+          
+        }
+      }
+      .specials2 {
+        
+        p {
+          
+        }
+      }
+      .special {
+        
+        p {
+          
+        }
+      }
+    }
+  }
+  #blog-nav {
+    
+    .top {
+      
+    }
+    .top1 {
+      
+      li {
+        
+      }
+      a {
+        
+      }
+      a:hover {
+        
+      }
+    }
+    ul {
+      
+    }
+    li {
+      
+    }
+    .container {
+      
+      p {
+        
+      }
+      h1 {
+        
+      }
+    }
+    a {
+      
+    }
+    a:hover {
+      
+    }
+    .current a {
+      
+    }
+  }
+  .btn-main,
+  .btn-light,
+  .btn-dark {
+    
+  }
 }

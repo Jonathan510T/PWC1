@@ -1,2 +1,37 @@
 body {
-  background: red; }
+  font-family: "Hind", sans-serif; }
+  body .img-logo {
+    border-radius: 50%;
+    border: 3px solid #12949b;
+    width: 125px;
+    height: 125px; }
+  body #logo {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    text-transform: uppercase; }
+  body header #nav-bar {
+    padding: 2rem 3rem;
+    background: #3a4e50;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    height: 60px; }
+    body header #nav-bar ul {
+      display: flex; }
+    body header #nav-bar li {
+      padding: 1rem 1.5rem; }
+    body header #nav-bar a {
+      text-decoration: none;
+      color: #12949b;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s;
+      text-emphasis: 1rem;
+      font-weight: bolder;
+      font-size: larger; }
+    body header #nav-bar a:hover {
+      border-color: #12949b; }
+    body header #nav-bar a.current {
+      border-color: #08b453; }
