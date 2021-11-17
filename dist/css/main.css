@@ -1,38 +1,175 @@
 body {
-  font-family: "Hind", sans-serif; }
-  body .img-logo {
-    border-radius: 50%;
-    border: 3px solid #12949b;
-    width: 125px;
-    height: 125px;
-    object-fit: cover; }
-  body #logo {
-    width: 70px;
-    height: 70px;
-    color: #fff;
-    text-transform: uppercase; }
-  body header #nav-bar {
-    padding: 2rem 3rem;
-    background: #3a4e50;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-    height: 60px; }
-    body header #nav-bar ul {
-      display: flex; }
-    body header #nav-bar li {
-      padding: 1rem 1.5rem; }
-    body header #nav-bar a {
-      text-decoration: none;
-      color: #12949b;
-      text-transform: uppercase;
-      border-bottom: 3px transparent solid;
-      padding-bottom: 0.5rem;
-      transition: border-color 0.5s;
-      text-emphasis: 1rem;
-      font-weight: bolder;
-      font-size: larger; }
-    body header #nav-bar a:hover {
-      border-color: #12949b; }
-    body header #nav-bar a.current {
-      border-color: #08b453; }
+  padding: 0;
+  margin: 0; }
+  body .background {
+    position: absolute;
+    height: 100vh;
+    width: 100%; }
+  body .home::before {
+    position: fixed;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    background: url("../../img/background.jpg") no-repeat center/cover; }
+  body .blog::before {
+    position: fixed;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    background: url("../../img/mushroom.jpg") no-repeat center/cover; }
+  body .contact::before {
+    position: fixed;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    background: url("../../img/mushroom.jpg") no-repeat center/cover; }
+  body .team::before {
+    position: fixed;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    background: url("../../img/mushroom.jpg") no-repeat center/cover; }
+  body .maincontent {
+    position: relative;
+    font-family: "Hind", sans-serif; }
+    body .maincontent .img-logo {
+      border-radius: 50%;
+      border: 3px solid #12949b;
+      width: 125px;
+      height: 125px;
+      object-fit: cover; }
+    body .maincontent #logo {
+      width: 70px;
+      height: 70px;
+      color: #fff;
+      text-transform: uppercase; }
+    body .maincontent header #nav-bar {
+      padding: 2rem 3rem;
+      background: #3a4e50EE;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1rem;
+      height: 60px; }
+      body .maincontent header #nav-bar ul {
+        display: flex; }
+      body .maincontent header #nav-bar li {
+        padding: 1rem 1.5rem; }
+      body .maincontent header #nav-bar a {
+        text-decoration: none;
+        color: #12949b;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+        text-emphasis: 1rem;
+        font-weight: bolder;
+        font-size: larger; }
+      body .maincontent header #nav-bar a:hover {
+        border-color: #12949b; }
+      body .maincontent header #nav-bar a.current {
+        border-color: #08b453; }
+    body .maincontent #socials {
+      margin: 5vh;
+      text-align: center; }
+      body .maincontent #socials h1 {
+        font-size: 28px;
+        color: black; }
+      body .maincontent #socials .social-menu {
+        height: 10vh; }
+        body .maincontent #socials .social-menu ul {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 0;
+          margin: 0;
+          display: flex; }
+          body .maincontent #socials .social-menu ul li {
+            list-style: none;
+            margin: 0 10px; }
+            body .maincontent #socials .social-menu ul li .fab {
+              color: #000000;
+              font-size: 45px;
+              line-height: 70px;
+              transition: 0.5s; }
+            body .maincontent #socials .social-menu ul li .fas {
+              color: #000000;
+              font-size: 45px;
+              line-height: 70px;
+              transition: 0.5s; }
+            body .maincontent #socials .social-menu ul li .fa:hover {
+              color: #ffffff; }
+            body .maincontent #socials .social-menu ul li a {
+              margin-bottom: 30vh;
+              position: relative;
+              display: block;
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              background-color: #f4f4f4;
+              text-align: center;
+              transition: 0.5s;
+              transform: translate(0, 0px);
+              box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); }
+            body .maincontent #socials .social-menu ul li a:hover {
+              transform: rotate(0deg) skew(0deg) translate(0, -10px); }
+          body .maincontent #socials .social-menu ul li:nth-child(1) a:hover {
+            background-color: #3b5999; }
+          body .maincontent #socials .social-menu ul li:nth-child(2) a:hover {
+            background-color: #55acee; }
+          body .maincontent #socials .social-menu ul li:nth-child(3) a:hover {
+            background-color: #e4405f; }
+          body .maincontent #socials .social-menu ul li:nth-child(4) a:hover {
+            background-color: #cd201f; }
+          body .maincontent #socials .social-menu ul li:nth-child(5) a:hover {
+            background-color: #0077b5; }
+    body .maincontent #team-top {
+      padding: 5%;
+      border-style: solid;
+      border-color: #12949b;
+      border-width: 10px;
+      width: 70%;
+      height: 5%;
+      position: relative;
+      left: 50%;
+      top: 100px;
+      transform: translate(-50%, 0);
+      background-color: #3a4e50EE; }
+    body .maincontent #team-main {
+      border-style: solid;
+      border-color: #12949b;
+      border-width: 10px;
+      width: 80%;
+      position: relative;
+      left: 50%;
+      top: 90px;
+      transform: translate(-50%, 0);
+      background-color: #3a4e50EE;
+      margin-bottom: 10%; }
+      body .maincontent #team-main ul {
+        display: flex;
+        color: #00000000;
+        margin: 0;
+        margin-left: -40px; }
+        body .maincontent #team-main ul li {
+          list-style: none;
+          border-right-style: solid;
+          border-color: #12949b;
+          border-width: 10px;
+          width: 30%;
+          padding: 5%;
+          color: #000000; }
+        body .maincontent #team-main ul #border {
+          border-right-style: none; }
