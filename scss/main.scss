@@ -61,7 +61,7 @@ body {
     bottom: 0;
     left: 0;
     opacity: 0.5;
-    background: url("../../img/mushroom.jpg") no-repeat center/cover;
+    background: url('../../img/lake.jpg') no-repeat center/cover;
   }
   .contact::before {
     position: fixed;
@@ -83,6 +83,16 @@ body {
     opacity: 0.5;
     background: url("../../img/mushroom.jpg") no-repeat center/cover;
   }
+  .articlepage::before {
+    position: fixed;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    background: #FFFFFF no-repeat center/cover;
+  }
   //required div class for text to appear on top of background
   .maincontent {
     position: relative;
@@ -93,6 +103,12 @@ body {
       width: 125px;
       height: 125px;
       object-fit: cover;
+    }
+    .img-all {
+      width: 100%;
+      border-radius: 0;
+      border: none;
+      height: 500px;
     }
     #logo {
       width: 70px;
@@ -247,7 +263,7 @@ body {
       padding: 5%;
       border-style: solid;
       border-color: $border-color;
-      border-width: 10px;
+      border-width: 5px;
       width: 70%;
       height: 5%;
       position: relative;
@@ -255,11 +271,12 @@ body {
       top: 100px;
       transform: translate(-50%, 0);
       background-color: $background-color;
+      color:$text-color;
     }
     #team-main {
       border-style: solid;
       border-color: $border-color;
-      border-width: 10px;
+      border-width: 5px;
       width: 80%;
       position: relative;
       left: 50%;
@@ -267,7 +284,7 @@ body {
       transform: translate(-50%, 0);
       background-color: $background-color;
       margin-bottom: 10%;
-      ul {
+      .top{
         display: flex;
         color: #00000000;
         margin: 0;
@@ -276,13 +293,76 @@ body {
           list-style: none;
           border-right-style: solid;
           border-color: $border-color;
-          border-width: 10px;
+          border-width: 5px;
           width: 30%;
           padding: 5%;
-          color: #000000;
+          color: $text-color;
+          
         }
         #border {
           border-right-style: none;
+        }
+      }
+      .bottom {
+        display: flex;
+        color:#00000000;
+        margin: 0;
+        margin-left: -40px;
+        li {
+          list-style: none;
+          border-right-style: solid;
+          border-top: solid;
+          border-color: $border-color;
+          border-width: 5px;
+          width: 50%;
+          padding: 5%;
+          color: $text-color;
+          
+        }
+        #border {
+          border-right-style: none;
+        }
+      }
+    }
+    .article {
+      max-width: 1280px;
+      padding: 0 0rem;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+      margin: 2rem 0;
+      grid-gap: 1.5rem;
+      .card {
+        background: white;
+        padding: 1rem;
+        .l-heading {
+          font-size: 3rem;
+        }
+        .meta {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #eee;
+          padding: 0.55rem;
+          .category {
+            margin-top: 0.4rem;
+          }
+        }
+        a {
+          text-decoration: underline;
+        }
+      }
+      .card-side {
+        background: white;
+        height: 40vh;
+        padding: 1rem;
+        h2 {
+          text-decoration: underline;
+          color: #08b453;
+        }
+        .btn-dark {
+          margin-top: 8rem;
+          margin-left: 60px;
         }
       }
     }
