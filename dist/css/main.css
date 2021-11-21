@@ -1,3 +1,32 @@
+.bottom-line {
+  width: 100px;
+  height: 5px;
+  background-color: pink; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: blue; }
+
+.btn-light {
+  color: #333;
+  background-color: azure; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: grey; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: PaleVioletRed; }
+
 body {
   padding: 0;
   margin: 0; }
@@ -12,8 +41,32 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.5;
-    background: url("../../img/background.jpg") no-repeat center/cover; }
+    opacity: 0.9;
+    background: url("../../img/homebg.jpg") no-repeat center/cover; }
+  body .home-main {
+    padding: 50px;
+    height: 60vh;
+    color: white; }
+    body .home-main h1 {
+      font-size: 75px; }
+    body .home-main p {
+      font-size: 20px; }
+  body #home-a {
+    display: flex;
+    font-size: 19px;
+    margin-bottom: 10vh; }
+    body #home-a .specials {
+      height: 50vh;
+      padding: 10px;
+      background: whitesmoke; }
+    body #home-a .specials2 {
+      height: 50vh;
+      padding: 10px;
+      background: thistle; }
+    body #home-a .specials3 {
+      height: 50vh;
+      padding: 10px;
+      background: whitesmoke; }
   body .blog::before {
     position: fixed;
     content: "";
@@ -55,9 +108,35 @@ body {
       height: 70px;
       color: #fff;
       text-transform: uppercase; }
+    body .maincontent header #nav-home {
+      padding: 2rem 3rem;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1rem;
+      height: 60px; }
+      body .maincontent header #nav-home ul {
+        display: flex; }
+      body .maincontent header #nav-home li {
+        padding: 1rem 1.5rem;
+        list-style: none; }
+      body .maincontent header #nav-home a {
+        text-decoration: none;
+        color: Thistle;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+        text-emphasis: 1rem;
+        font-weight: bolder;
+        font-size: 22px; }
+      body .maincontent header #nav-home a:hover {
+        border-color: PaleVioletRed; }
+      body .maincontent header #nav-home a.current {
+        border-color: white; }
     body .maincontent header #nav-bar {
       padding: 2rem 3rem;
-      background: #3a4e50EE;
+      background: #3a4e50ee;
       display: flex;
       justify-content: space-between;
       padding-top: 1rem;
@@ -65,7 +144,8 @@ body {
       body .maincontent header #nav-bar ul {
         display: flex; }
       body .maincontent header #nav-bar li {
-        padding: 1rem 1.5rem; }
+        padding: 1rem 1.5rem;
+        list-style: none; }
       body .maincontent header #nav-bar a {
         text-decoration: none;
         color: #12949b;
@@ -80,10 +160,15 @@ body {
         border-color: #12949b; }
       body .maincontent header #nav-bar a.current {
         border-color: #08b453; }
+    body .maincontent #main-footer {
+      height: 10vh;
+      text-align: center;
+      background: gray; }
     body .maincontent #socials {
-      margin: 5vh;
-      text-align: center; }
+      text-align: center;
+      margin: 5; }
       body .maincontent #socials h1 {
+        margin: 10px;
         font-size: 28px;
         color: black; }
       body .maincontent #socials .social-menu {
@@ -146,7 +231,7 @@ body {
       left: 50%;
       top: 100px;
       transform: translate(-50%, 0);
-      background-color: #3a4e50EE; }
+      background-color: #3a4e50ee; }
     body .maincontent #team-main {
       border-style: solid;
       border-color: #12949b;
@@ -156,7 +241,7 @@ body {
       left: 50%;
       top: 90px;
       transform: translate(-50%, 0);
-      background-color: #3a4e50EE;
+      background-color: #3a4e50ee;
       margin-bottom: 10%; }
       body .maincontent #team-main ul {
         display: flex;

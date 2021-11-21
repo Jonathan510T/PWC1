@@ -1,0 +1,45 @@
+$border-color: #12949b;
+$background-color: #3a4e50ee;
+$main-color: blue;
+$dark-color: grey;
+$light-color: seashell;
+$medium-color: PaleVioletRed;
+
+.bottom-line {
+  width: 100px;
+  height: 5px;
+  background-color: pink;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: azure;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $medium-color;
+}
