@@ -1,7 +1,9 @@
 .bottom-line {
-  width: 100px;
-  height: 5px;
-  background-color: pink; }
+  height: 5.5px;
+  width: 6rem;
+  background: #1dafb8;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
@@ -12,7 +14,7 @@
 
 .btn-main {
   color: #333;
-  background-color: blue; }
+  background-color: #08b453; }
 
 .btn-light {
   color: #333;
@@ -20,12 +22,12 @@
 
 .btn-dark {
   color: #f4f4f4;
-  background-color: grey; }
+  background-color: #333; }
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: PaleVioletRed; }
+  background-color: #1dafb8; }
 
 body {
   padding: 0;
@@ -52,21 +54,79 @@ body {
     body .home-main p {
       font-size: 20px; }
   body #home-a {
-    display: flex;
-    font-size: 19px;
-    margin-bottom: 10vh; }
-    body #home-a .specials {
-      height: 50vh;
-      padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px; }
+    body #home-a .special {
+      text-align: center;
+      font-size: 15px;
+      width: 350px;
+      height: 500px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 15px 25px;
+      cursor: pointer;
+      margin: 10px 15px;
+      background: seashell;
+      transition: transform 0.5s;
+      box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.5); }
+      body #home-a .special h1 {
+        font-size: 28px; }
+    body #home-a .special:hover {
+      transform: translateY(-15px); }
+  body .blog-top {
+    text-align: center;
+    padding: 30px 80px;
+    margin-bottom: 90px; }
+    body .blog-top h1 {
+      text-decoration: underline;
+      color: #1dafb8;
+      font-size: 40px; }
+    body .blog-top p {
+      font-weight: 24px;
+      font-size: 19px; }
+  body .top1 {
+    background: white;
+    height: 430px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px; }
+    body .top1 .special {
+      text-align: center;
+      font-size: 15px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 15px 25px;
+      cursor: pointer;
+      margin: 10px 15px;
       background: whitesmoke; }
-    body #home-a .specials2 {
-      height: 50vh;
-      padding: 10px;
-      background: thistle; }
-    body #home-a .specials3 {
-      height: 50vh;
-      padding: 10px;
-      background: whitesmoke; }
+      body .top1 .special h1 {
+        text-decoration: underline;
+        font-size: 23px; }
+  body #blog-recent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 200px; }
+    body #blog-recent .container {
+      border-radius: 5px;
+      background: #deebe3;
+      width: 26rem;
+      height: 650px;
+      color: black;
+      text-align: center;
+      margin: 3rem;
+      padding: 1rem;
+      box-shadow: 0 6px 7px black; }
+      body #blog-recent .container .img-article {
+        width: 26rem;
+        height: 245px; }
+      body #blog-recent .container h1 {
+        text-decoration: underline; }
+  body .blog-h {
+    text-align: center;
+    margin: 2rem;
+    font-size: x-large; }
   body .blog::before {
     position: fixed;
     content: "";
@@ -75,7 +135,7 @@ body {
     bottom: 0;
     left: 0;
     opacity: 0.5;
-    background: url("../../img/mushroom.jpg") no-repeat center/cover; }
+    background: url("../../img/blogbg.jpg") no-repeat center/cover; }
   body .contact::before {
     position: fixed;
     content: "";
@@ -161,15 +221,16 @@ body {
       body .maincontent header #nav-bar a.current {
         border-color: #08b453; }
     body .maincontent #main-footer {
-      height: 10vh;
+      margin-top: 100px;
+      height: 40px;
       text-align: center;
-      background: gray; }
+      background: pink; }
     body .maincontent #socials {
       text-align: center;
       margin: 5; }
       body .maincontent #socials h1 {
         margin: 10px;
-        font-size: 28px;
+        font-size: 38px;
         color: black; }
       body .maincontent #socials .social-menu {
         height: 10vh; }
@@ -186,13 +247,13 @@ body {
             margin: 0 10px; }
             body .maincontent #socials .social-menu ul li .fab {
               color: #000000;
-              font-size: 45px;
-              line-height: 70px;
+              font-size: 65px;
+              line-height: 95px;
               transition: 0.5s; }
             body .maincontent #socials .social-menu ul li .fas {
               color: #000000;
-              font-size: 45px;
-              line-height: 70px;
+              font-size: 65px;
+              line-height: 95px;
               transition: 0.5s; }
             body .maincontent #socials .social-menu ul li .fa:hover {
               color: #ffffff; }
@@ -200,8 +261,8 @@ body {
               margin-bottom: 30vh;
               position: relative;
               display: block;
-              width: 70px;
-              height: 70px;
+              width: 95px;
+              height: 95px;
               border-radius: 50%;
               background-color: #f4f4f4;
               text-align: center;

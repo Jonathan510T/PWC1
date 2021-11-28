@@ -1,14 +1,17 @@
 $border-color: #12949b;
 $background-color: #3a4e50ee;
-$main-color: blue;
-$dark-color: grey;
+$main-color: #08b453;
+$dark-color: #333;
 $light-color: seashell;
 $medium-color: PaleVioletRed;
+$secondary-color: #1dafb8;
 
 .bottom-line {
-  width: 100px;
-  height: 5px;
-  background-color: pink;
+  height: 5.5px;
+  width: 6rem;
+  background: $secondary-color;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
 
 %btn-shared {
@@ -41,5 +44,5 @@ $medium-color: PaleVioletRed;
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: $medium-color;
+  background-color: $secondary-color;
 }

@@ -1,0 +1,30 @@
+.bottom-line {
+  height: 5.5px;
+  width: 6rem;
+  background: #1dafb8;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #08b453; }
+
+.btn-light {
+  color: #333;
+  background-color: azure; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #1dafb8; }
