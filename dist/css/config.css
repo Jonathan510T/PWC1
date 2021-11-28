@@ -1,15 +1,9 @@
 .bottom-line {
-<<<<<<< HEAD
   height: 5.5px;
   width: 6rem;
   background: #1dafb8;
   display: block;
   margin: 0 auto 1rem auto; }
-=======
-  width: 100px;
-  height: 5px;
-  background-color: pink; }
->>>>>>> 7efd6d65842c47a7bc5defc7acaf031ffafba7f9
 
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
@@ -20,11 +14,7 @@
 
 .btn-main {
   color: #333;
-<<<<<<< HEAD
   background-color: #08b453; }
-=======
-  background-color: blue; }
->>>>>>> 7efd6d65842c47a7bc5defc7acaf031ffafba7f9
 
 .btn-light {
   color: #333;
@@ -32,17 +22,9 @@
 
 .btn-dark {
   color: #f4f4f4;
-<<<<<<< HEAD
   background-color: #333; }
-=======
-  background-color: grey; }
->>>>>>> 7efd6d65842c47a7bc5defc7acaf031ffafba7f9
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-<<<<<<< HEAD
   background-color: #1dafb8; }
-=======
-  background-color: PaleVioletRed; }
->>>>>>> 7efd6d65842c47a7bc5defc7acaf031ffafba7f9
