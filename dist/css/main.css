@@ -135,11 +135,7 @@ body {
     bottom: 0;
     left: 0;
     opacity: 0.5;
-<<<<<<< HEAD
     background: url("../../img/blogbg.jpg") no-repeat center/cover; }
-=======
-    background: url("../../img/lake.jpg") no-repeat center/cover; }
->>>>>>> 7efd6d65842c47a7bc5defc7acaf031ffafba7f9
   body .contact::before {
     position: fixed;
     content: "";
@@ -158,15 +154,6 @@ body {
     left: 0;
     opacity: 0.5;
     background: url("../../img/mushroom.jpg") no-repeat center/cover; }
-  body .articlepage::before {
-    position: fixed;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.5;
-    background: #FFFFFF no-repeat center/cover; }
   body .maincontent {
     position: relative;
     font-family: "Hind", sans-serif; }
@@ -176,11 +163,6 @@ body {
       width: 125px;
       height: 125px;
       object-fit: cover; }
-    body .maincontent .img-all {
-      width: 100%;
-      border-radius: 0;
-      border: none;
-      height: 500px; }
     body .maincontent #logo {
       width: 70px;
       height: 70px;
@@ -303,19 +285,18 @@ body {
       padding: 5%;
       border-style: solid;
       border-color: #12949b;
-      border-width: 5px;
+      border-width: 10px;
       width: 70%;
       height: 5%;
       position: relative;
       left: 50%;
       top: 100px;
       transform: translate(-50%, 0);
-      background-color: #3a4e50ee;
-      color: #000000; }
+      background-color: #3a4e50ee; }
     body .maincontent #team-main {
       border-style: solid;
       border-color: #12949b;
-      border-width: 5px;
+      border-width: 10px;
       width: 80%;
       position: relative;
       left: 50%;
@@ -323,67 +304,18 @@ body {
       transform: translate(-50%, 0);
       background-color: #3a4e50ee;
       margin-bottom: 10%; }
-      body .maincontent #team-main .top {
+      body .maincontent #team-main ul {
         display: flex;
         color: #00000000;
         margin: 0;
         margin-left: -40px; }
-        body .maincontent #team-main .top li {
+        body .maincontent #team-main ul li {
           list-style: none;
           border-right-style: solid;
           border-color: #12949b;
-          border-width: 5px;
+          border-width: 10px;
           width: 30%;
           padding: 5%;
           color: #000000; }
-        body .maincontent #team-main .top #border {
+        body .maincontent #team-main ul #border {
           border-right-style: none; }
-      body .maincontent #team-main .bottom {
-        display: flex;
-        color: #00000000;
-        margin: 0;
-        margin-left: -40px; }
-        body .maincontent #team-main .bottom li {
-          list-style: none;
-          border-right-style: solid;
-          border-top: solid;
-          border-color: #12949b;
-          border-width: 5px;
-          width: 50%;
-          padding: 5%;
-          color: #000000; }
-        body .maincontent #team-main .bottom #border {
-          border-right-style: none; }
-    body .maincontent .article {
-      max-width: 1280px;
-      padding: 0 0rem;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 5fr 2fr;
-      margin: 2rem 0;
-      grid-gap: 1.5rem; }
-      body .maincontent .article .card {
-        background: white;
-        padding: 1rem; }
-        body .maincontent .article .card .l-heading {
-          font-size: 3rem; }
-        body .maincontent .article .card .meta {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background: #eee;
-          padding: 0.55rem; }
-          body .maincontent .article .card .meta .category {
-            margin-top: 0.4rem; }
-        body .maincontent .article .card a {
-          text-decoration: underline; }
-      body .maincontent .article .card-side {
-        background: white;
-        height: 40vh;
-        padding: 1rem; }
-        body .maincontent .article .card-side h2 {
-          text-decoration: underline;
-          color: #08b453; }
-        body .maincontent .article .card-side .btn-dark {
-          margin-top: 8rem;
-          margin-left: 60px; }
