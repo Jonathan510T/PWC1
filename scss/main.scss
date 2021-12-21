@@ -244,6 +244,12 @@ body {
       text-align: center;
       background: pink;
     }
+    #team-footer {
+      margin-top: 100px;
+      height: 40px;
+      text-align: center;
+      background: $secondary-color;
+    }
     #socials {
       text-align: center;
       margin: 5;
@@ -339,7 +345,7 @@ body {
       transform: translate(-50%, 0);
       background-color: $background-color;
       margin-bottom: 10%;
-      ul {
+      .teamfirst {
         display: flex;
         color: #00000000;
         margin: 0;
@@ -350,6 +356,25 @@ body {
           border-color: $border-color;
           border-width: 10px;
           width: 30%;
+          padding: 5%;
+          color: #000000;
+        }
+        #border {
+          border-right-style: none;
+        }
+      }
+      .teamsecond {
+        display: flex;
+        color: #00000000;
+        margin: 0;
+        margin-left: -40px;
+        li {
+          list-style: none;
+          border-right-style: solid;
+          border-top-style: solid;
+          border-color: $border-color;
+          border-width: 10px;
+          width: 50%;
           padding: 5%;
           color: #000000;
         }
