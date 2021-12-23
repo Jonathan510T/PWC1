@@ -18,18 +18,22 @@ body {
     bottom: 0;
     left: 0;
     opacity: 0.9;
-    background: url("../../img/homebg.jpg") no-repeat center/cover;
+    background: url("../../img/homebg1.jpg") no-repeat center/cover;
   }
 
   .home-main {
-    padding: 50px;
+    padding: 60px;
     height: 60vh;
     color: white;
     h1 {
-      font-size: 75px;
+      font-size: 78px;
     }
     p {
-      font-size: 20px;
+      font-size: 23px;
+    }
+    strong {
+      color: #146b3a;
+      text-decoration: underline;
     }
   }
   #home-a {
@@ -142,7 +146,7 @@ body {
     bottom: 0;
     left: 0;
     opacity: 0.5;
-    background: url("../../img/mushroom.jpg") no-repeat center/cover;
+    background: url("../../img/bg.jpg") no-repeat center/cover;
   }
   .team::before {
     position: fixed;
@@ -154,6 +158,61 @@ body {
     opacity: 0.5;
     background: url("../../img/mushroom.jpg") no-repeat center/cover;
   }
+
+  #contact-top {
+    p {
+      padding: 10px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 65px;
+      color: #111;
+    }
+  }
+
+  #contact1 {
+    height: 70vh;
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      padding: 0 10px;
+      overflow: hidden;
+      .contact-text {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 16px 0;
+        border: 0;
+        background: #111;
+        padding: 20px 40px;
+        outline: none;
+        color: #ddd;
+        transition: 0.5s;
+      }
+      .contact-text:focus {
+        box-shadow: 0 0 10px 4px $main-color;
+      }
+      textarea {
+        resize: none;
+        height: 250px;
+      }
+      .contact-btn {
+        border: 0;
+        background: #2980b9;
+        color: #fff;
+        padding: 12px 285px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        text-align: center;
+        align-self: center;
+      }
+      .contact-btn:hover {
+        background: $border-color;
+      }
+    }
+  }
+
   //required div class for text to appear on top of background
   .maincontent {
     position: relative;
@@ -188,7 +247,7 @@ body {
         }
         a {
           text-decoration: none;
-          color: Thistle;
+          color: $border-color;
           text-transform: uppercase;
           border-bottom: 3px transparent solid;
           padding-bottom: 0.5rem;
@@ -198,7 +257,7 @@ body {
           font-size: 22px;
         }
         a:hover {
-          border-color: $medium-color;
+          border-color: $main-color;
         }
         a.current {
           border-color: white;
@@ -234,7 +293,7 @@ body {
           border-color: $border-color;
         }
         a.current {
-          border-color: #08b453;
+          border-color: $main-color;
         }
       }
     }
@@ -242,7 +301,7 @@ body {
       margin-top: 100px;
       height: 40px;
       text-align: center;
-      background: pink;
+      background: $medium-color;
     }
     #team-footer {
       margin-top: 100px;
@@ -252,9 +311,8 @@ body {
     }
     #socials {
       text-align: center;
-      margin: 5;
       h1 {
-        margin: 10px;
+        margin-top: 20px;
         font-size: 38px;
         color: black;
       }
@@ -288,6 +346,68 @@ body {
             }
             a {
               margin-bottom: 30vh;
+              position: relative;
+              display: block;
+              width: 95px;
+              height: 95px;
+              border-radius: 50%;
+              background-color: #f4f4f4;
+              text-align: center;
+              transition: 0.5s;
+              transform: translate(0, 0px);
+              box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+            }
+            a:hover {
+              transform: rotate(0deg) skew(0deg) translate(0, -10px);
+            }
+          }
+          li:nth-child(1) a:hover {
+            background-color: #3b5999;
+          }
+          li:nth-child(2) a:hover {
+            background-color: #55acee;
+          }
+          li:nth-child(3) a:hover {
+            background-color: #e4405f;
+          }
+          li:nth-child(4) a:hover {
+            background-color: #cd201f;
+          }
+          li:nth-child(5) a:hover {
+            background-color: #0077b5;
+          }
+        }
+      }
+    }
+    #socials-contact {
+      text-align: center;
+      .social-menu {
+        ul {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 0;
+          margin: 0;
+          display: flex;
+          li {
+            list-style: none;
+            margin: 0 10px;
+            .fab {
+              color: #000000;
+              font-size: 65px;
+              line-height: 95px;
+              transition: 0.5s;
+            }
+            .fas {
+              color: #000000;
+              font-size: 65px;
+              line-height: 95px;
+              transition: 0.5s;
+            }
+            .fa:hover {
+              color: #ffffff;
+            }
+            a {
               position: relative;
               display: block;
               width: 95px;
