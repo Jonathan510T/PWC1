@@ -21,6 +21,8 @@ body {
     background: url("../../img/homebg1.jpg") no-repeat center/cover;
   }
 
+
+
   .home-main {
     padding: 60px;
     height: 60vh;
@@ -73,13 +75,14 @@ body {
       font-size: 40px;
     }
     p {
-      font-weight: 24px;
-      font-size: 19px;
+      color: $dark-color;
+      font-weight:bold;
+      font-size: 25px;
     }
   }
   .top1 {
     background: white;
-    height: 430px;
+    height: 450px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
@@ -88,7 +91,7 @@ body {
       font-size: 15px;
       border-radius: 10px;
       box-sizing: border-box;
-      padding: 15px 25px;
+      padding: 15px 5px;
       cursor: pointer;
       margin: 10px 15px;
       background: whitesmoke;
@@ -127,6 +130,8 @@ body {
     margin: 2rem;
     font-size: x-large;
   }
+
+
 
   .blog::before {
     position: fixed;
@@ -171,7 +176,7 @@ body {
   }
 
   #contact1 {
-    height: 70vh;
+    height: 80vh;
     .contact-form {
       max-width: 600px;
       margin: auto;
@@ -190,7 +195,7 @@ body {
         transition: 0.5s;
       }
       .contact-text:focus {
-        box-shadow: 0 0 10px 4px $main-color;
+        box-shadow: 0 0 10px 4px $secondary-color;
       }
       textarea {
         resize: none;
@@ -206,11 +211,105 @@ body {
         transition: 0.5s;
         text-align: center;
         align-self: center;
+        margin-bottom: 100px;
       }
       .contact-btn:hover {
         background: $border-color;
       }
     }
+  }
+
+  #article {
+    height: 120vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3vw;
+    .img-article {
+      margin: 45px 45px;
+      height: 330px;
+      width: 500px;
+      box-shadow: 5px 7px 7px 5px;
+    }
+    
+    .article-left {
+      border-radius: 2%;
+      margin-top: 5vh;
+      height: 100vh;
+      width: 45vw;
+      margin-left: 3vw;
+      background-color: $dark-color;
+      h1 {
+        padding: 5px 15px;
+        color: $light-color;
+        font-size: xx-large;
+        text-decoration: underline;
+      }
+      p {
+        color: $light-color;
+        padding: 10px 10px;
+        font-size: smaller;
+      }
+    }
+    .article-right {
+      border-radius: 2%;
+      margin-top: 5vh;
+      height: 100vh; 
+      width: 45vw;
+      h1 {
+        color: #111;
+        padding-left: 15px;
+      }
+      
+      p {
+        padding-left: 15px;
+        color: #111;
+      }
+      background-color: $light-color;
+    }
+  }
+  .article-contact {
+    background-color: $background-color;
+    padding: 15px 10px;
+    border-radius: 15px;
+    width: 60vw;
+    margin-left: 17vw;
+    text-align: center;
+    
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      color: $light-color;
+      
+    }
+    
+    a {
+      background: $light-color;
+      color: $dark-color;
+      cursor: pointer;
+      padding: 5px 20px;
+      text-align: center;
+      transition: 0.5s;
+      
+    }
+    a:hover {
+      padding: 10px 25px;
+      color: $secondary-color;
+    }
+  }
+  .img-logo-article {
+    border-radius: 50%;
+    border: 3px solid $border-color;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    margin: 15px 15px;
+  }
+  #logo-article {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    text-transform: uppercase;
   }
 
   //required div class for text to appear on top of background
@@ -263,9 +362,11 @@ body {
           border-color: white;
         }
       }
+     
       #nav-bar {
         padding: 2rem 3rem;
-        background: $background-color;
+        background: rgb(49, 48, 48); 
+        opacity: 0.9;
         display: flex;
         justify-content: space-between;
         padding-top: 1rem;
@@ -297,17 +398,52 @@ body {
         }
       }
     }
+    #nav-article {
+      padding: 2rem 3rem;
+      background: url("../../img/af.PNG") no-repeat center/cover;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1rem;
+      height: 60px;
+
+      ul {
+        display: flex;
+      }
+      li {
+        padding: 1rem 1.5rem;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: $light-color;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+        text-emphasis: 1rem;
+        font-weight: bolder;
+        font-size: larger;
+      }
+      a:hover {
+        border-color: $light-color;
+      }
+      a.current {
+        border-color: $light-color;
+      }
+    }
+  
     #main-footer {
-      margin-top: 100px;
-      height: 40px;
+      color: white;
+
+      height: 50px;
       text-align: center;
-      background: $medium-color;
+      background: rgb(49, 48, 48); 
     }
     #team-footer {
-      margin-top: 100px;
-      height: 40px;
+      color: white;
+      height: 50px;
       text-align: center;
-      background: $secondary-color;
+      background: rgb(49, 48, 48); 
     }
     #socials {
       text-align: center;
@@ -379,73 +515,13 @@ body {
         }
       }
     }
-    #socials-contact {
-      text-align: center;
-      .social-menu {
-        ul {
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          padding: 0;
-          margin: 0;
-          display: flex;
-          li {
-            list-style: none;
-            margin: 0 10px;
-            .fab {
-              color: #000000;
-              font-size: 65px;
-              line-height: 95px;
-              transition: 0.5s;
-            }
-            .fas {
-              color: #000000;
-              font-size: 65px;
-              line-height: 95px;
-              transition: 0.5s;
-            }
-            .fa:hover {
-              color: #ffffff;
-            }
-            a {
-              position: relative;
-              display: block;
-              width: 95px;
-              height: 95px;
-              border-radius: 50%;
-              background-color: #f4f4f4;
-              text-align: center;
-              transition: 0.5s;
-              transform: translate(0, 0px);
-              box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-            }
-            a:hover {
-              transform: rotate(0deg) skew(0deg) translate(0, -10px);
-            }
-          }
-          li:nth-child(1) a:hover {
-            background-color: #3b5999;
-          }
-          li:nth-child(2) a:hover {
-            background-color: #55acee;
-          }
-          li:nth-child(3) a:hover {
-            background-color: #e4405f;
-          }
-          li:nth-child(4) a:hover {
-            background-color: #cd201f;
-          }
-          li:nth-child(5) a:hover {
-            background-color: #0077b5;
-          }
-        }
-      }
-    }
+   
     #team-top {
+      border-radius: 3%;
       padding: 5%;
       border-style: solid;
       border-color: $border-color;
-      border-width: 10px;
+      border-width: 3px;
       width: 70%;
       height: 5%;
       position: relative;
@@ -453,11 +529,14 @@ body {
       top: 100px;
       transform: translate(-50%, 0);
       background-color: $background-color;
+      color: white;
+      text-align: center;
     }
     #team-main {
+      border-radius: 3%;
       border-style: solid;
       border-color: $border-color;
-      border-width: 10px;
+      border-width: 3px;
       width: 80%;
       position: relative;
       left: 50%;
@@ -467,20 +546,22 @@ body {
       margin-bottom: 10%;
       .teamfirst {
         display: flex;
-        color: #00000000;
+        color: white;
         margin: 0;
         margin-left: -40px;
         li {
+          border-radius: 3%;
+          border-width: 3px;
           list-style: none;
           border-right-style: solid;
           border-color: $border-color;
-          border-width: 10px;
           width: 30%;
           padding: 5%;
-          color: #000000;
+          color: white;
         }
         #border {
           border-right-style: none;
+      
         }
       }
       .teamsecond {
@@ -489,17 +570,19 @@ body {
         margin: 0;
         margin-left: -40px;
         li {
+          border-radius: 3%;
+          border-width: 3px;
           list-style: none;
           border-right-style: solid;
           border-top-style: solid;
           border-color: $border-color;
-          border-width: 10px;
           width: 50%;
           padding: 5%;
-          color: #000000;
+          color: white;
         }
         #border {
           border-right-style: none;
+       
         }
       }
     }

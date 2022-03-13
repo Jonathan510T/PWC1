@@ -87,11 +87,12 @@ body {
       color: #1dafb8;
       font-size: 40px; }
     body .blog-top p {
-      font-weight: 24px;
-      font-size: 19px; }
+      color: #333;
+      font-weight: bold;
+      font-size: 25px; }
   body .top1 {
     background: white;
-    height: 430px;
+    height: 450px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px; }
@@ -100,7 +101,7 @@ body {
       font-size: 15px;
       border-radius: 10px;
       box-sizing: border-box;
-      padding: 15px 25px;
+      padding: 15px 5px;
       cursor: pointer;
       margin: 10px 15px;
       background: whitesmoke; }
@@ -164,7 +165,7 @@ body {
     font-size: 65px;
     color: #111; }
   body #contact1 {
-    height: 70vh; }
+    height: 80vh; }
     body #contact1 .contact-form {
       max-width: 600px;
       margin: auto;
@@ -182,7 +183,7 @@ body {
         color: #ddd;
         transition: 0.5s; }
       body #contact1 .contact-form .contact-text:focus {
-        box-shadow: 0 0 10px 4px #08b453; }
+        box-shadow: 0 0 10px 4px #1dafb8; }
       body #contact1 .contact-form textarea {
         resize: none;
         height: 250px; }
@@ -195,15 +196,87 @@ body {
         cursor: pointer;
         transition: 0.5s;
         text-align: center;
-        align-self: center; }
+        align-self: center;
+        margin-bottom: 100px; }
       body #contact1 .contact-form .contact-btn:hover {
-        background: #16a8af; }
+        background: #13979e; }
+  body #article {
+    height: 120vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3vw; }
+    body #article .img-article {
+      margin: 45px 45px;
+      height: 330px;
+      width: 500px;
+      box-shadow: 5px 7px 7px 5px; }
+    body #article .article-left {
+      border-radius: 2%;
+      margin-top: 5vh;
+      height: 100vh;
+      width: 45vw;
+      margin-left: 3vw;
+      background-color: #333; }
+      body #article .article-left h1 {
+        padding: 5px 15px;
+        color: seashell;
+        font-size: xx-large;
+        text-decoration: underline; }
+      body #article .article-left p {
+        color: seashell;
+        padding: 10px 10px;
+        font-size: smaller; }
+    body #article .article-right {
+      border-radius: 2%;
+      margin-top: 5vh;
+      height: 100vh;
+      width: 45vw;
+      background-color: seashell; }
+      body #article .article-right h1 {
+        color: #111;
+        padding-left: 15px; }
+      body #article .article-right p {
+        padding-left: 15px;
+        color: #111; }
+  body .article-contact {
+    background-color: #3a4e50ee;
+    padding: 15px 10px;
+    border-radius: 15px;
+    width: 60vw;
+    margin-left: 17vw;
+    text-align: center; }
+    body .article-contact h1 {
+      text-align: center;
+      font-size: 20px;
+      color: seashell; }
+    body .article-contact a {
+      background: seashell;
+      color: #333;
+      cursor: pointer;
+      padding: 5px 20px;
+      text-align: center;
+      transition: 0.5s; }
+    body .article-contact a:hover {
+      padding: 10px 25px;
+      color: #1dafb8; }
+  body .img-logo-article {
+    border-radius: 50%;
+    border: 3px solid #13979e;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    margin: 15px 15px; }
+  body #logo-article {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    text-transform: uppercase; }
   body .maincontent {
     position: relative;
     font-family: "Hind", sans-serif; }
     body .maincontent .img-logo {
       border-radius: 50%;
-      border: 3px solid #16a8af;
+      border: 3px solid #13979e;
       width: 125px;
       height: 125px;
       object-fit: cover; }
@@ -226,7 +299,7 @@ body {
         list-style: none; }
       body .maincontent header #nav-home a {
         text-decoration: none;
-        color: #16a8af;
+        color: #13979e;
         text-transform: uppercase;
         border-bottom: 3px transparent solid;
         padding-bottom: 0.5rem;
@@ -240,7 +313,8 @@ body {
         border-color: white; }
     body .maincontent header #nav-bar {
       padding: 2rem 3rem;
-      background: #3a4e50ee;
+      background: #313030;
+      opacity: 0.9;
       display: flex;
       justify-content: space-between;
       padding-top: 1rem;
@@ -252,7 +326,7 @@ body {
         list-style: none; }
       body .maincontent header #nav-bar a {
         text-decoration: none;
-        color: #16a8af;
+        color: #13979e;
         text-transform: uppercase;
         border-bottom: 3px transparent solid;
         padding-bottom: 0.5rem;
@@ -261,19 +335,45 @@ body {
         font-weight: bolder;
         font-size: larger; }
       body .maincontent header #nav-bar a:hover {
-        border-color: #16a8af; }
+        border-color: #13979e; }
       body .maincontent header #nav-bar a.current {
         border-color: #08b453; }
+    body .maincontent #nav-article {
+      padding: 2rem 3rem;
+      background: url("../../img/af.PNG") no-repeat center/cover;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1rem;
+      height: 60px; }
+      body .maincontent #nav-article ul {
+        display: flex; }
+      body .maincontent #nav-article li {
+        padding: 1rem 1.5rem;
+        list-style: none; }
+      body .maincontent #nav-article a {
+        text-decoration: none;
+        color: seashell;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+        text-emphasis: 1rem;
+        font-weight: bolder;
+        font-size: larger; }
+      body .maincontent #nav-article a:hover {
+        border-color: seashell; }
+      body .maincontent #nav-article a.current {
+        border-color: seashell; }
     body .maincontent #main-footer {
-      margin-top: 100px;
-      height: 40px;
+      color: white;
+      height: 50px;
       text-align: center;
-      background: PaleVioletRed; }
+      background: #313030; }
     body .maincontent #team-footer {
-      margin-top: 100px;
-      height: 40px;
+      color: white;
+      height: 50px;
       text-align: center;
-      background: #1dafb8; }
+      background: #313030; }
     body .maincontent #socials {
       text-align: center; }
       body .maincontent #socials h1 {
@@ -329,69 +429,26 @@ body {
             background-color: #cd201f; }
           body .maincontent #socials .social-menu ul li:nth-child(5) a:hover {
             background-color: #0077b5; }
-    body .maincontent #socials-contact {
-      text-align: center; }
-      body .maincontent #socials-contact .social-menu ul {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0;
-        margin: 0;
-        display: flex; }
-        body .maincontent #socials-contact .social-menu ul li {
-          list-style: none;
-          margin: 0 10px; }
-          body .maincontent #socials-contact .social-menu ul li .fab {
-            color: #000000;
-            font-size: 65px;
-            line-height: 95px;
-            transition: 0.5s; }
-          body .maincontent #socials-contact .social-menu ul li .fas {
-            color: #000000;
-            font-size: 65px;
-            line-height: 95px;
-            transition: 0.5s; }
-          body .maincontent #socials-contact .social-menu ul li .fa:hover {
-            color: #ffffff; }
-          body .maincontent #socials-contact .social-menu ul li a {
-            position: relative;
-            display: block;
-            width: 95px;
-            height: 95px;
-            border-radius: 50%;
-            background-color: #f4f4f4;
-            text-align: center;
-            transition: 0.5s;
-            transform: translate(0, 0px);
-            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); }
-          body .maincontent #socials-contact .social-menu ul li a:hover {
-            transform: rotate(0deg) skew(0deg) translate(0, -10px); }
-        body .maincontent #socials-contact .social-menu ul li:nth-child(1) a:hover {
-          background-color: #3b5999; }
-        body .maincontent #socials-contact .social-menu ul li:nth-child(2) a:hover {
-          background-color: #55acee; }
-        body .maincontent #socials-contact .social-menu ul li:nth-child(3) a:hover {
-          background-color: #e4405f; }
-        body .maincontent #socials-contact .social-menu ul li:nth-child(4) a:hover {
-          background-color: #cd201f; }
-        body .maincontent #socials-contact .social-menu ul li:nth-child(5) a:hover {
-          background-color: #0077b5; }
     body .maincontent #team-top {
+      border-radius: 3%;
       padding: 5%;
       border-style: solid;
-      border-color: #16a8af;
-      border-width: 10px;
+      border-color: #13979e;
+      border-width: 3px;
       width: 70%;
       height: 5%;
       position: relative;
       left: 50%;
       top: 100px;
       transform: translate(-50%, 0);
-      background-color: #3a4e50ee; }
+      background-color: #3a4e50ee;
+      color: white;
+      text-align: center; }
     body .maincontent #team-main {
+      border-radius: 3%;
       border-style: solid;
-      border-color: #16a8af;
-      border-width: 10px;
+      border-color: #13979e;
+      border-width: 3px;
       width: 80%;
       position: relative;
       left: 50%;
@@ -401,17 +458,18 @@ body {
       margin-bottom: 10%; }
       body .maincontent #team-main .teamfirst {
         display: flex;
-        color: #00000000;
+        color: white;
         margin: 0;
         margin-left: -40px; }
         body .maincontent #team-main .teamfirst li {
+          border-radius: 3%;
+          border-width: 3px;
           list-style: none;
           border-right-style: solid;
-          border-color: #16a8af;
-          border-width: 10px;
+          border-color: #13979e;
           width: 30%;
           padding: 5%;
-          color: #000000; }
+          color: white; }
         body .maincontent #team-main .teamfirst #border {
           border-right-style: none; }
       body .maincontent #team-main .teamsecond {
@@ -420,13 +478,14 @@ body {
         margin: 0;
         margin-left: -40px; }
         body .maincontent #team-main .teamsecond li {
+          border-radius: 3%;
+          border-width: 3px;
           list-style: none;
           border-right-style: solid;
           border-top-style: solid;
-          border-color: #16a8af;
-          border-width: 10px;
+          border-color: #13979e;
           width: 50%;
           padding: 5%;
-          color: #000000; }
+          color: white; }
         body .maincontent #team-main .teamsecond #border {
           border-right-style: none; }
